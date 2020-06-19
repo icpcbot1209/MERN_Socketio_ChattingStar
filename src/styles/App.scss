@@ -1,0 +1,230 @@
+body,
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: black;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: fadeIn 10s linear;
+  }
+}
+
+.logo-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.video-background {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+.content-bottom {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  padding: 20px;
+}
+//////////////////////////////////
+.nop {
+  padding: 0 !important;
+}
+
+////////////////////////////////////
+
+.btn-transp {
+  font-size: 18px;
+  padding: 10px;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  border: thin solid yellow;
+  width: 250px;
+}
+
+.btn-transp:hover {
+  color: yellow;
+}
+
+.btn-transp-sm {
+  font-size: 15px;
+  padding: 3px;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  border: thin solid teal;
+  width: 100%;
+}
+
+.btn-transp-sm:hover {
+  background-color: teal;
+}
+
+.btn-transp-checked {
+  font-size: 15px;
+  padding: 3px;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  border: thick solid teal;
+  width: 100%;
+}
+
+.btn-transp-round {
+  font-size: 18px;
+  padding: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  border: thin solid yellow;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.btn-transp-round:hover {
+  color: yellow;
+}
+
+.input-transp {
+  font-size: 18px;
+  padding: 10px;
+  background: transparent;
+  color: white;
+  border: thin solid yellow;
+  width: 250px;
+}
+
+.input-transp-sm {
+  max-width: 250px;
+  font-size: 14px;
+  padding: 3px;
+  background: transparent;
+  color: white;
+  border: thin solid yellow;
+}
+
+/*** Home ***/
+
+.panel-ad-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 100%;
+  background-color: #00ffff33;
+  animation: scale-up-ver-top 5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+.panel-star-bg {
+  position: fixed;
+  top: 0;
+  left: 20%;
+  width: 60%;
+  height: 100%;
+}
+.panel-chat-bg {
+  position: fixed;
+  top: 0;
+  left: 80%;
+  width: 20%;
+  height: 100%;
+  background-color: #33dd0033;
+  animation: scale-up-ver-bottom 5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@keyframes scale-up-ver-bottom {
+  0% {
+    transform: scaleY(0.1);
+    transform-origin: 0% 100%;
+  }
+  100% {
+    transform: scaleY(1);
+    transform-origin: 0% 100%;
+  }
+}
+
+@keyframes scale-up-ver-center {
+  0% {
+    transform: scaleY(0.4);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes scale-up-ver-top {
+  0% {
+    transform: scaleY(0.4);
+    transform-origin: 100% 0%;
+  }
+  100% {
+    transform: scaleY(1);
+    transform-origin: 100% 0%;
+  }
+}
+
+// scroll bar
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #3883;
+  opacity: 0.5;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

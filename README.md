@@ -1,7 +1,14 @@
-# MERN_Socketio_ChattingStar
+# ChattingStar
+This is a brand new chatting site with realtime-movement action.
 
-Brand new chatting site using React, node, mongo, and Socket.io.
+[live site](https://chattingstar.com)
 
-![](/readme/chattingstar.png)
+- Socket.io
+- React, Node
+- Canvas & SVG handling
+- Google Recaptcha API
+- React Emoticon Picker
+- Google Ads API
 
-Sorry for not providing the code. This project is NDA signed and private for the client.
+![](/readme/chatting-star.gif)
+
